@@ -63,7 +63,7 @@ export function initLightbox(photoList) {
   nextBtn.addEventListener('click', (e) => { e.stopPropagation(); navigate(1); });
 
   lightboxEl.addEventListener('click', (e) => {
-    if (e.target === lightboxEl) close();
+    if (e.target === lightboxEl || e.target === imgEl) close();
   });
 
   document.addEventListener('keydown', (e) => {
