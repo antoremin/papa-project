@@ -1,0 +1,16 @@
+{
+  "name": "papa-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "process": "node scripts/process-images.js",
+    "build": "node scripts/process-images.js && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "vite": "^7.3.1"
+  }
+}
